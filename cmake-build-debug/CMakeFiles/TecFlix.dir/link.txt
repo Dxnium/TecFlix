@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -g   CMakeFiles/TecFlix.dir/main.cpp.o  -o TecFlix -Wl,-rpath,/home/danium/Qt/5.13.0/gcc_64/lib /home/danium/Qt/5.13.0/gcc_64/lib/libQt5Gui.so.5.13.0 /home/danium/Qt/5.13.0/gcc_64/lib/libQt5Core.so.5.13.0 
