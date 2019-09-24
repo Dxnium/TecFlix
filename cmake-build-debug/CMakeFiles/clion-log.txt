@@ -1,4 +1,4 @@
-/snap/clion/82/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_PREFIX_PATH=/home/danium/Qt/5.13.0/gcc_64/lib/cmake -G "CodeBlocks - Unix Makefiles" "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix"
+/snap/clion/83/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix"
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug

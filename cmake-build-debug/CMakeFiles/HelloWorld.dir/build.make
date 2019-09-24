@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/82/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/83/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/82/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/83/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -70,20 +70,65 @@ CMakeFiles/HelloWorld.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloWorld.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/main.cpp" -o CMakeFiles/HelloWorld.dir/main.cpp.s
 
+CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.o: CMakeFiles/HelloWorld.dir/flags.make
+CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.o: ../GUI/StratWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.o -c "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/StratWindow.cpp"
+
+CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/StratWindow.cpp" > CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.i
+
+CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/StratWindow.cpp" -o CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.s
+
+CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.o: CMakeFiles/HelloWorld.dir/flags.make
+CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.o: ../GUI/Normal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.o -c "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Normal.cpp"
+
+CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Normal.cpp" > CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.i
+
+CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Normal.cpp" -o CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.s
+
+CMakeFiles/HelloWorld.dir/GUI/Box.cpp.o: CMakeFiles/HelloWorld.dir/flags.make
+CMakeFiles/HelloWorld.dir/GUI/Box.cpp.o: ../GUI/Box.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HelloWorld.dir/GUI/Box.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HelloWorld.dir/GUI/Box.cpp.o -c "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Box.cpp"
+
+CMakeFiles/HelloWorld.dir/GUI/Box.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HelloWorld.dir/GUI/Box.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Box.cpp" > CMakeFiles/HelloWorld.dir/GUI/Box.cpp.i
+
+CMakeFiles/HelloWorld.dir/GUI/Box.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HelloWorld.dir/GUI/Box.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Box.cpp" -o CMakeFiles/HelloWorld.dir/GUI/Box.cpp.s
+
 # Object files for target HelloWorld
 HelloWorld_OBJECTS = \
-"CMakeFiles/HelloWorld.dir/main.cpp.o"
+"CMakeFiles/HelloWorld.dir/main.cpp.o" \
+"CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.o" \
+"CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.o" \
+"CMakeFiles/HelloWorld.dir/GUI/Box.cpp.o"
 
 # External object files for target HelloWorld
 HelloWorld_EXTERNAL_OBJECTS =
 
 HelloWorld: CMakeFiles/HelloWorld.dir/main.cpp.o
+HelloWorld: CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.o
+HelloWorld: CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.o
+HelloWorld: CMakeFiles/HelloWorld.dir/GUI/Box.cpp.o
 HelloWorld: CMakeFiles/HelloWorld.dir/build.make
-HelloWorld: /home/danium/Qt/5.13.0/gcc_64/lib/libQt5Widgets.so.5.13.0
-HelloWorld: /home/danium/Qt/5.13.0/gcc_64/lib/libQt5Gui.so.5.13.0
-HelloWorld: /home/danium/Qt/5.13.0/gcc_64/lib/libQt5Core.so.5.13.0
+HelloWorld: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5
+HelloWorld: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
+HelloWorld: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
 HelloWorld: CMakeFiles/HelloWorld.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable HelloWorld"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable HelloWorld"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HelloWorld.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

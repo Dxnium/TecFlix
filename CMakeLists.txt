@@ -8,14 +8,20 @@
     find_package(Qt5Core REQUIRED)
     find_package(Qt5Gui REQUIRED)
     find_package(Qt5Widgets REQUIRED)
-
-    set(SOURCE_FILES main.cpp GUI/Button.h)
+    set(SOURCE_FILES main.cpp GUI/Button.h GUI/Box.h GUI/CSVparser.h GUI/StratWindow.cpp GUI/StratWindow.h GUI/Normal.cpp GUI/Normal.h GUI/Box.cpp)
     add_executable(HelloWorld ${SOURCE_FILES})
 
     # specify which libraries to connect
     target_link_libraries(${PROJECT_NAME} Qt5::Core)
     target_link_libraries(${PROJECT_NAME} Qt5::Gui)
     target_link_libraries(${PROJECT_NAME} Qt5::Widgets)
+
+    include_directories(${CPR_INCLUDE_DIRS})
+
+    set(CURL_LIBRARY "-lcurl")
+    find_package(CURL REQUIRED)
+    include_directories(${CURL_INCLUDE_DIR})
+    target_link_libraries(HelloWorld ${CURL_LIBRARIES})
 
 
 

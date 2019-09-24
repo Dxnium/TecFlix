@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/82/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/83/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/82/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/83/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-bu
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/82/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/83/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/82/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/83/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,6 +123,87 @@ HelloWorld/fast:
 	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/build
 .PHONY : HelloWorld/fast
 
+GUI/Box.o: GUI/Box.cpp.o
+
+.PHONY : GUI/Box.o
+
+# target to build an object file
+GUI/Box.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/Box.cpp.o
+.PHONY : GUI/Box.cpp.o
+
+GUI/Box.i: GUI/Box.cpp.i
+
+.PHONY : GUI/Box.i
+
+# target to preprocess a source file
+GUI/Box.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/Box.cpp.i
+.PHONY : GUI/Box.cpp.i
+
+GUI/Box.s: GUI/Box.cpp.s
+
+.PHONY : GUI/Box.s
+
+# target to generate assembly for a file
+GUI/Box.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/Box.cpp.s
+.PHONY : GUI/Box.cpp.s
+
+GUI/Normal.o: GUI/Normal.cpp.o
+
+.PHONY : GUI/Normal.o
+
+# target to build an object file
+GUI/Normal.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.o
+.PHONY : GUI/Normal.cpp.o
+
+GUI/Normal.i: GUI/Normal.cpp.i
+
+.PHONY : GUI/Normal.i
+
+# target to preprocess a source file
+GUI/Normal.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.i
+.PHONY : GUI/Normal.cpp.i
+
+GUI/Normal.s: GUI/Normal.cpp.s
+
+.PHONY : GUI/Normal.s
+
+# target to generate assembly for a file
+GUI/Normal.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.s
+.PHONY : GUI/Normal.cpp.s
+
+GUI/StratWindow.o: GUI/StratWindow.cpp.o
+
+.PHONY : GUI/StratWindow.o
+
+# target to build an object file
+GUI/StratWindow.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.o
+.PHONY : GUI/StratWindow.cpp.o
+
+GUI/StratWindow.i: GUI/StratWindow.cpp.i
+
+.PHONY : GUI/StratWindow.i
+
+# target to preprocess a source file
+GUI/StratWindow.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.i
+.PHONY : GUI/StratWindow.cpp.i
+
+GUI/StratWindow.s: GUI/StratWindow.cpp.s
+
+.PHONY : GUI/StratWindow.s
+
+# target to generate assembly for a file
+GUI/StratWindow.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.s
+.PHONY : GUI/StratWindow.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... HelloWorld"
 	@echo "... edit_cache"
+	@echo "... GUI/Box.o"
+	@echo "... GUI/Box.i"
+	@echo "... GUI/Box.s"
+	@echo "... GUI/Normal.o"
+	@echo "... GUI/Normal.i"
+	@echo "... GUI/Normal.s"
+	@echo "... GUI/StratWindow.o"
+	@echo "... GUI/StratWindow.i"
+	@echo "... GUI/StratWindow.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

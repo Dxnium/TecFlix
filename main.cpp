@@ -1,20 +1,29 @@
 #include <QApplication>
 #include <QtWidgets/QWidget>
 #include <QtWidgets/QGridLayout>
-#include "GUI/Button.h"
-#include <QGridLayout>
+#include "GUI/Box.h"
+#include "GUI/CSVparser.h"
+#include "GUI/StratWindow.h"
+#include <iostream>
+#include <curl/curl.h>
+#include <iostream>
+
+
+
+using namespace std;
+
 
 
 int main(int argc, char *argv[]) {
-
     QApplication app(argc, argv);
-    QWidget window;
-    Button btn = new Button(&window);
-    btn.setLayout(new QGridLayout());
-    window.resize(700,700);
-    window.setWindowTitle("TecFlix");
+
+    StratWindow *window = new StratWindow();
 
 
-    window.show();
+    window->show();
     return app.exec();
 }
+
+
+
+
