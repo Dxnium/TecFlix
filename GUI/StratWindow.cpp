@@ -5,12 +5,14 @@
 #include "StratWindow.h"
 #include <iostream>
 #include "Normal.h"
+#include "ScrollArea.h"
 
 using namespace std;
 
 StratWindow::StratWindow(QWidget *parent): QWidget(parent) {
     resize(700,400);
     setWindowTitle("TecFlix");
+
 
     QPalette Pal(palette());
     // Asignar el color de fondo como Negro
@@ -28,16 +30,23 @@ StratWindow::StratWindow(QWidget *parent): QWidget(parent) {
     connect(btn_noInfinity, &QPushButton::clicked, this, &StratWindow::Normal_Aaction);
     btn_noInfinity->setStyleSheet("background-color: rgb(0,147,56);border: none; ");
     btn_noInfinity->setGeometry(350,200,200,20);
+
 }
 
 void StratWindow::Normal_Aaction() {
     this->close();
+    delete this;
 
     Normal *normal = new Normal();
     normal->show();
 }
 
 void StratWindow::Infinity() {
-    cout<<"Infinity"<<endl;
+    this->close();
+    delete this;
+
+    ScrollArea *scroll = new ScrollArea();
+    scroll->show();
+
 }
 

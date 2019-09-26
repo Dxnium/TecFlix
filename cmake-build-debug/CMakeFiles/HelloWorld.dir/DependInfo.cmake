@@ -6,6 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Box.cpp" "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles/HelloWorld.dir/GUI/Box.cpp.o"
   "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Normal.cpp" "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.o"
+  "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Page.cpp" "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles/HelloWorld.dir/GUI/Page.cpp.o"
+  "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/ScrollArea.cpp" "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles/HelloWorld.dir/GUI/ScrollArea.cpp.o"
   "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/StratWindow.cpp" "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.o"
   "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/main.cpp" "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles/HelloWorld.dir/main.cpp.o"
   )

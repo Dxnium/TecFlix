@@ -8,6 +8,8 @@
 #include <sstream>
 #include <QtWidgets/QPushButton>
 #include <QSpinBox>
+
+
 Normal::Normal(QWidget *parent): QWidget(parent) {
     resize(700,600);
     setWindowTitle("TecFlix");
@@ -24,12 +26,19 @@ Normal::Normal(QWidget *parent): QWidget(parent) {
     btn_Next->setGeometry(350,0,200,20);
 
     QPushButton *btn_Back = new QPushButton("back",this);
+    connect(btn_Back, &QPushButton::clicked, this,  &Normal::Back);
     btn_Back->setGeometry(150,0,200,20);
+
+    //button GO
+    QPushButton *btn_Go = new QPushButton("GO",this);
+    connect(btn_Go, &QPushButton::clicked, this,  &Normal::Go);
+    btn_Go->setGeometry(610,0,30,20);
 
     //spin box
     spinBox = new QSpinBox(this);
     spinBox->setValue(index);
-    spinBox->setGeometry(550,0,40,20);
+    spinBox->setRange(1,600);
+    spinBox->setGeometry(550,0,60,20);
     CSVparser(index);
 
 
@@ -95,7 +104,6 @@ void Normal::Next() {
         }
     }
 
-
     index+=1;
     spinBox->setValue(index);
 
@@ -103,6 +111,42 @@ void Normal::Next() {
 
     screenHandler();
 
+}
+
+void Normal::Go() {
+    while( grid->count() ) {
+        QWidget* widget = grid->itemAt(0)->widget();
+
+        if( widget ) {
+            grid->removeWidget(widget);
+            delete widget;
+        }
+    }
+
+    index = spinBox->value();
+
+    CSVparser(spinBox->value());
+
+    screenHandler();
+}
+
+void Normal::Back() {
+    if (index>1){
+        while( grid->count() ) {
+            QWidget* widget = grid->itemAt(0)->widget();
+
+            if( widget ) {
+                grid->removeWidget(widget);
+                delete widget;
+            }
+        }
+        index-=1;
+        spinBox->setValue(index);
+
+        CSVparser(spinBox->value());
+
+        screenHandler();
+    }
 }
 
 

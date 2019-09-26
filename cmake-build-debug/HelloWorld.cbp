@@ -118,6 +118,18 @@
 		<Unit filename="/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Normal.h">
 			<Option target="HelloWorld"/>
 		</Unit>
+		<Unit filename="/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Page.cpp">
+			<Option target="HelloWorld"/>
+		</Unit>
+		<Unit filename="/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Page.h">
+			<Option target="HelloWorld"/>
+		</Unit>
+		<Unit filename="/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/ScrollArea.cpp">
+			<Option target="HelloWorld"/>
+		</Unit>
+		<Unit filename="/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/ScrollArea.h">
+			<Option target="HelloWorld"/>
+		</Unit>
 		<Unit filename="/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/StratWindow.cpp">
 			<Option target="HelloWorld"/>
 		</Unit>

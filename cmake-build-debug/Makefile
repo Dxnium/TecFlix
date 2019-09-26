@@ -177,6 +177,60 @@ GUI/Normal.cpp.s:
 	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.s
 .PHONY : GUI/Normal.cpp.s
 
+GUI/Page.o: GUI/Page.cpp.o
+
+.PHONY : GUI/Page.o
+
+# target to build an object file
+GUI/Page.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/Page.cpp.o
+.PHONY : GUI/Page.cpp.o
+
+GUI/Page.i: GUI/Page.cpp.i
+
+.PHONY : GUI/Page.i
+
+# target to preprocess a source file
+GUI/Page.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/Page.cpp.i
+.PHONY : GUI/Page.cpp.i
+
+GUI/Page.s: GUI/Page.cpp.s
+
+.PHONY : GUI/Page.s
+
+# target to generate assembly for a file
+GUI/Page.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/Page.cpp.s
+.PHONY : GUI/Page.cpp.s
+
+GUI/ScrollArea.o: GUI/ScrollArea.cpp.o
+
+.PHONY : GUI/ScrollArea.o
+
+# target to build an object file
+GUI/ScrollArea.cpp.o:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/ScrollArea.cpp.o
+.PHONY : GUI/ScrollArea.cpp.o
+
+GUI/ScrollArea.i: GUI/ScrollArea.cpp.i
+
+.PHONY : GUI/ScrollArea.i
+
+# target to preprocess a source file
+GUI/ScrollArea.cpp.i:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/ScrollArea.cpp.i
+.PHONY : GUI/ScrollArea.cpp.i
+
+GUI/ScrollArea.s: GUI/ScrollArea.cpp.s
+
+.PHONY : GUI/ScrollArea.s
+
+# target to generate assembly for a file
+GUI/ScrollArea.cpp.s:
+	$(MAKE) -f CMakeFiles/HelloWorld.dir/build.make CMakeFiles/HelloWorld.dir/GUI/ScrollArea.cpp.s
+.PHONY : GUI/ScrollArea.cpp.s
+
 GUI/StratWindow.o: GUI/StratWindow.cpp.o
 
 .PHONY : GUI/StratWindow.o
@@ -246,6 +300,12 @@ help:
 	@echo "... GUI/Normal.o"
 	@echo "... GUI/Normal.i"
 	@echo "... GUI/Normal.s"
+	@echo "... GUI/Page.o"
+	@echo "... GUI/Page.i"
+	@echo "... GUI/Page.s"
+	@echo "... GUI/ScrollArea.o"
+	@echo "... GUI/ScrollArea.i"
+	@echo "... GUI/ScrollArea.s"
 	@echo "... GUI/StratWindow.o"
 	@echo "... GUI/StratWindow.i"
 	@echo "... GUI/StratWindow.s"

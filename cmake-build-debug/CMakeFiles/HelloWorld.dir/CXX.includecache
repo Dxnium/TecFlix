@@ -18,31 +18,51 @@ QLabel
 iostream
 -
 
-/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Normal.cpp
-Normal.h
-/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Normal.h
+/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Page.h
+QtWidgets/QWidget
+-
+QGridLayout
+-
+
+/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/ScrollArea.cpp
+QtWidgets/QLabel
+-
+ScrollArea.h
+/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/ScrollArea.h
 Box.h
 /home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Box.h
+Page.h
+/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Page.h
 fstream
 -
 sstream
 -
-QtWidgets/QPushButton
--
-QSpinBox
--
-
-/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Normal.h
-QWidget
--
 iostream
 -
-QtWidgets/QGridLayout
+QListWidget
 -
-QSpinBox
+QScrollBar
 -
-Box.h
-/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Box.h
+
+/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/ScrollArea.h
+QApplication
+-
+QWidget
+-
+QScrollArea
+-
+QGridLayout
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
+QtCore/qvariant.h
+-
+QtCore/qobject.h
+-
+QtCore/qhash.h
+-
+QtCore/qvector.h
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 QtCore/qglobal.h
@@ -138,6 +158,20 @@ limits.h
 new
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h
+QtCore/qglobal.h
+-
+QtCore/qstring.h
+-
+QtCore/qobject.h
+-
+QtCore/qcoreevent.h
+-
+QtCore/qeventloop.h
+-
+QtCore/qscopedpointer.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
 QtCore/qnamespace.h
 -
@@ -184,6 +218,10 @@ list
 map
 -
 utility
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h
+QtCore/qobject.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
@@ -294,6 +332,18 @@ QtCore/qobjectdefs.h
 QtCore/qscopedpointer.h
 -
 QtCore/qstring.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h
+QtCore/qglobal.h
+-
+QtCore/qset.h
+-
+QtCore/qvector.h
+-
+QtCore/qlist.h
+-
+QtCore/qabstractitemmodel.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h
@@ -816,6 +866,22 @@ QtCore/qsharedpointer.h
 QtCore/qrect.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h
+QtGui/qtguiglobal.h
+-
+QtCore/qcoreapplication.h
+-
+QtGui/qwindowdefs.h
+-
+QtGui/qinputmethod.h
+-
+QtCore/qlocale.h
+-
+QtCore/qpoint.h
+-
+QtCore/qsize.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h
 QtGui/qtguiglobal.h
 -
@@ -846,6 +912,12 @@ QtCore/qrect.h
 QtCore/qstring.h
 -
 QtCore/qstringlist.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h
+QtGui/qtguiglobal.h
+-
+QtCore/qobject.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h
@@ -1032,6 +1104,10 @@ QtGui/qwindowdefs_win.h
 QtGui/qtguiglobal.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
+qapplication.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout
 qgridlayout.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h
@@ -1044,13 +1120,21 @@ qgroupbox.h
 qlabel.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListWidget
+qlistwidget.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistwidget.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
 qpushbutton.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpinBox
-qspinbox.h
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qspinbox.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QScrollArea
+qscrollarea.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qscrollarea.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QScrollBar
+qscrollbar.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qscrollbar.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
 qwidget.h
@@ -1066,12 +1150,62 @@ QtGui/qkeysequence.h
 QtWidgets/qwidget.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtCore/qobject.h
+-
+QtWidgets/qstyleoption.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemview.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qabstractscrollarea.h
+-
+QtCore/qabstractitemmodel.h
+-
+QtCore/qitemselectionmodel.h
+-
+QtWidgets/qabstractitemdelegate.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractscrollarea.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qframe.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractslider.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qwidget.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h
 QtWidgets/qtwidgetsglobal.h
 -
 QtWidgets/qwidget.h
 -
 QtGui/qvalidator.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtCore/qcoreapplication.h
+-
+QtGui/qwindowdefs.h
+-
+QtCore/qpoint.h
+-
+QtCore/qsize.h
+-
+QtGui/qcursor.h
+-
+QtWidgets/qdesktopwidget.h
+-
+QtGui/qguiapplication.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h
@@ -1082,6 +1216,12 @@ QtWidgets/qlayout.h
 QtWidgets/qwidget.h
 -
 limits.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qwidget.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h
@@ -1142,10 +1282,48 @@ QtCore/qrect.h
 limits.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistview.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qabstractitemview.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistwidget.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qlistview.h
+-
+QtCore/qvariant.h
+-
+QtCore/qvector.h
+-
+QtCore/qitemselectionmodel.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
 QtWidgets/qtwidgetsglobal.h
 -
 QtWidgets/qabstractbutton.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qwidget.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qscrollarea.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qabstractscrollarea.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qscrollbar.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qwidget.h
+-
+QtWidgets/qabstractslider.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
@@ -1156,10 +1334,70 @@ QtCore/qobject.h
 QtCore/qalgorithms.h
 -
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qspinbox.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h
 QtWidgets/qtwidgetsglobal.h
 -
+QtWidgets/qabstractslider.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtCore/qobject.h
+-
+QtCore/qrect.h
+-
+QtCore/qsize.h
+-
+QtGui/qicon.h
+-
+QtGui/qpixmap.h
+-
+QtGui/qpalette.h
+-
+QtWidgets/qsizepolicy.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtCore/qlocale.h
+-
+QtCore/qvariant.h
+-
 QtWidgets/qabstractspinbox.h
+-
+QtGui/qicon.h
+-
+QtGui/qmatrix.h
+-
+QtWidgets/qslider.h
+-
+QtWidgets/qstyle.h
+-
+QtWidgets/qtabbar.h
+-
+QtWidgets/qtabwidget.h
+-
+QtWidgets/qrubberband.h
+-
+QtWidgets/qframe.h
+-
+QtCore/qabstractitemmodel.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qwidget.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qwidget.h
+-
+QtGui/qicon.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h

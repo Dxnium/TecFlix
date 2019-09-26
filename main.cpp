@@ -18,8 +18,6 @@ int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
     StratWindow *window = new StratWindow();
-
-
     window->show();
     return app.exec();
 }

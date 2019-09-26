@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.o"
   "CMakeFiles/HelloWorld.dir/GUI/Normal.cpp.o"
   "CMakeFiles/HelloWorld.dir/GUI/Box.cpp.o"
+  "CMakeFiles/HelloWorld.dir/GUI/ScrollArea.cpp.o"
+  "CMakeFiles/HelloWorld.dir/GUI/Page.cpp.o"
   "HelloWorld.pdb"
   "HelloWorld"
 )

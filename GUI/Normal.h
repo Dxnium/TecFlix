@@ -29,6 +29,8 @@ public:
 
     void Next();
     void screenHandler();
+    void Go();
+    void Back();
 };
 
 

@@ -145,7 +145,7 @@ void Box::ImageLoader(std::string link) {
     curl_easy_cleanup(image);
     // Close the file
     fclose(fp);
-    system("pause");
+    //system("pause");
 
 };
 
