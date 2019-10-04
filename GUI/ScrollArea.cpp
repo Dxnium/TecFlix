@@ -14,8 +14,8 @@
 
 using namespace std;
 
-ScrollArea::ScrollArea(QWidget *parent): QWidget(parent) {
-    resize(700,600);
+ScrollArea::ScrollArea(QWidget *parent) : QWidget(parent) {
+    resize(1920, 1080);
     setWindowTitle("TecFlix");
 
     QPalette Pal(palette());
@@ -25,24 +25,35 @@ ScrollArea::ScrollArea(QWidget *parent): QWidget(parent) {
     setPalette(Pal);
 
     scrollArea = new QScrollArea(this);
-    scrollArea->setGeometry(10,10,680,580);
+    scrollArea->setGeometry(10, 10, 1900, 1060);
 
-
-    CSVparser(1);
+    //CSVparser(1);
 
     //screeHandler();
-
-    Page *p = new Page();
-    scrollArea->setWidget(p);
-
-   // scrollArea->takeWidget();
-
+    page_index = 1;
+    page = new Page(page_index,false);
+    page2 = new Page(page_index + 1,false);
+    page3 = new Page(page_index + 2,false);
 
 
+    grid->addWidget(scrollArea);
+
+    widget = new QWidget();
+    grid_scroll = new QGridLayout();
+    grid_scroll->addWidget(page);
+    grid_scroll->addWidget(page2);
+    grid_scroll->addWidget(page3);
+    widget->setLayout(grid_scroll);
+
+
+    scrollArea->setWidget(widget);
+    setLayout(grid);
+
+    scroll_length = widget->height() - 900;
 }
 
 void ScrollArea::CSVparser(int pag) {
-    int index = pag*9;
+    int index = pag * 9;
     ifstream myFile;
     string line;
     string line2;
@@ -53,18 +64,12 @@ void ScrollArea::CSVparser(int pag) {
         cout << "error opening the file" << endl;
     }
     int tmp = 0;
-
-    for(int i=0;i<pag*9;i++){
-        getline(myFile,line,'\n');
+    for (int i = 0; i < pag * 9; i++) {
+        getline(myFile, line, '\n');
         stringstream data(line);
-        if(i>=(pag*9)-9 and i<=pag*9){
-            //cout<<line<<endl;
+        if (i >= (pag * 9) - 9 and i <= pag * 9) {
             array[tmp] = line;
-            //for(int i=0;i<27;i++){
-            getline(data,line2,',');
-            //cout<<line2<<" ";
-            //}
-            //cout<<endl;
+            getline(data, line2, ',');
             tmp++;
         }
     }
@@ -74,28 +79,73 @@ void ScrollArea::CSVparser(int pag) {
 void ScrollArea::screeHandler() {
     int tmp = 0;
     int tmp2 = 0;
-    for(int i =0;i<9;i++){
-        if(tmp2>2){
+    for (int i = 0; i < 9; i++) {
+        if (tmp2 > 2) {
             tmp2 = 0;
             tmp += 1;
         }
         Box *b = new Box(array[i]);
 
-        grid->addWidget(b,tmp,tmp2);
-        tmp2 +=1;
+        grid->addWidget(b, tmp, tmp2);
+        tmp2 += 1;
     }
 
 }
 
 void ScrollArea::wheelEvent(QWheelEvent *event) {
     QScrollBar *bar = scrollArea->verticalScrollBar();
-    //cout<<bar->sliderPosition()<<endl;
-    bar->setRange(0,8000);
+    bar->setRange(0, scroll_length);
 
-    if(bar->sliderPosition() == bar->maximum() ){
-        bar->setSliderPosition(0);
-        cout<<"llegó"<<endl;
+    if (bar->sliderPosition() == bar->maximum()) {
+        scroll_length += 0;
+        bar->setRange(0, scroll_length);
+        page_index+=1;
+        addPage();
+        bar->setSliderPosition(bar->sliderPosition() - 500);
     }
+    if (bar->sliderPosition() == bar->minimum()) {
+        //cout<<"gg"<<endl;
+        if(page_index!=1){
+            page_index-=1;
+            subPage();
+            bar->setSliderPosition(bar->sliderPosition() + 500);
+        }
+    }
+}
+
+void ScrollArea::addPage() {
+    delete(page);
+    page = page2;
+    page2 = page3;
+
+    Page *newpage = new Page(page_index+2,false);
+
+    page3 = newpage;
+    grid_scroll->addWidget(page);
+    grid_scroll->addWidget(page2);
+    grid_scroll->addWidget(page3);
+    widget->setLayout(grid_scroll);
+
+
+    scrollArea->setWidget(widget);
+}
+
+void ScrollArea::subPage() {
+    delete(page3);
+    Page *tmp =page2;
+    page2 = page;
+    page3=tmp;
+    Page *newpage = new Page(page_index,false);
+
+    page=newpage;
+
+    grid_scroll->addWidget(page);
+    grid_scroll->addWidget(page2);
+    grid_scroll->addWidget(page3);
+    widget->setLayout(grid_scroll);
+
+
+    scrollArea->setWidget(widget);
 }
 
 

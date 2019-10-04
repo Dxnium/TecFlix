@@ -6,6 +6,7 @@
 #include <iostream>
 #include "Normal.h"
 #include "ScrollArea.h"
+#include "../NoP/NoPag.h"
 
 using namespace std;
 
@@ -31,6 +32,11 @@ StratWindow::StratWindow(QWidget *parent): QWidget(parent) {
     btn_noInfinity->setStyleSheet("background-color: rgb(0,147,56);border: none; ");
     btn_noInfinity->setGeometry(350,200,200,20);
 
+    QPushButton *btn_nopag = new QPushButton("NO-Pag",this);
+    connect(btn_nopag, &QPushButton::clicked, this, &StratWindow::Nopag);
+    btn_nopag->setStyleSheet("background-color: rgb(0,147,56);border: none; ");
+    btn_nopag->setGeometry(250,300,200,30);
+
 }
 
 void StratWindow::Normal_Aaction() {
@@ -47,6 +53,15 @@ void StratWindow::Infinity() {
 
     ScrollArea *scroll = new ScrollArea();
     scroll->show();
+
+}
+
+void StratWindow::Nopag() {
+    this->close();
+    delete this;
+
+    NoPag *noPag = new NoPag();
+    noPag->show();
 
 }
 

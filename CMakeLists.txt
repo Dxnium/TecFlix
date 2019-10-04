@@ -8,7 +8,7 @@
     find_package(Qt5Core REQUIRED)
     find_package(Qt5Gui REQUIRED)
     find_package(Qt5Widgets REQUIRED)
-    set(SOURCE_FILES main.cpp GUI/Button.h GUI/Box.h GUI/CSVparser.h GUI/StratWindow.cpp GUI/StratWindow.h GUI/Normal.cpp GUI/Normal.h GUI/Box.cpp GUI/ScrollArea.cpp GUI/ScrollArea.h GUI/Page.cpp GUI/Page.h)
+    set(SOURCE_FILES main.cpp GUI/Button.h GUI/Box.h GUI/CSVparser.h GUI/StratWindow.cpp GUI/StratWindow.h GUI/Normal.cpp GUI/Normal.h GUI/Box.cpp GUI/ScrollArea.cpp GUI/ScrollArea.h GUI/Page.cpp GUI/Page.h NoP/NoPag.cpp NoP/NoPag.h)
     add_executable(HelloWorld ${SOURCE_FILES})
 
     # specify which libraries to connect

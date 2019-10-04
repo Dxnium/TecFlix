@@ -17,6 +17,8 @@ public:
     void Normal_Aaction();
 
     void Infinity();
+
+    void Nopag();
 };
 
 

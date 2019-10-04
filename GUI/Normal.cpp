@@ -9,8 +9,8 @@
 #include <QtWidgets/QPushButton>
 #include <QSpinBox>
 
-
 Normal::Normal(QWidget *parent): QWidget(parent) {
+
     resize(700,600);
     setWindowTitle("TecFlix");
 
@@ -23,22 +23,22 @@ Normal::Normal(QWidget *parent): QWidget(parent) {
     //button
     QPushButton *btn_Next = new QPushButton("next",this);
     connect(btn_Next, &QPushButton::clicked, this,  &Normal::Next);
-    btn_Next->setGeometry(350,0,200,20);
+    btn_Next->setGeometry(550,0,400,40);
 
     QPushButton *btn_Back = new QPushButton("back",this);
     connect(btn_Back, &QPushButton::clicked, this,  &Normal::Back);
-    btn_Back->setGeometry(150,0,200,20);
+    btn_Back->setGeometry(150,0,400,40);
 
     //button GO
     QPushButton *btn_Go = new QPushButton("GO",this);
     connect(btn_Go, &QPushButton::clicked, this,  &Normal::Go);
-    btn_Go->setGeometry(610,0,30,20);
+    btn_Go->setGeometry(1070,0,60,40);
 
     //spin box
     spinBox = new QSpinBox(this);
     spinBox->setValue(index);
     spinBox->setRange(1,600);
-    spinBox->setGeometry(550,0,60,20);
+    spinBox->setGeometry(950,0,120,40);
     CSVparser(index);
 
 
@@ -86,7 +86,7 @@ void Normal::screenHandler() {
             tmp2 = 0;
             tmp += 1;
         }
-        Box *b = new Box(array[i]);
+        Box *b = new Box(array[i],false);
 
         grid->addWidget(b,tmp,tmp2);
         tmp2 +=1;

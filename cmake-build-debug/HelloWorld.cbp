@@ -136,6 +136,12 @@
 		<Unit filename="/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/StratWindow.h">
 			<Option target="HelloWorld"/>
 		</Unit>
+		<Unit filename="/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/NoP/NoPag.cpp">
+			<Option target="HelloWorld"/>
+		</Unit>
+		<Unit filename="/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/NoP/NoPag.h">
+			<Option target="HelloWorld"/>
+		</Unit>
 		<Unit filename="/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/main.cpp">
 			<Option target="HelloWorld"/>
 		</Unit>

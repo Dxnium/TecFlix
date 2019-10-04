@@ -21,6 +21,7 @@ class Box : public QGroupBox {
 
 public:
     Box(std::string data, QWidget *parent = 0, QVBoxLayout *layout=0);
+    Box(std::string data,bool img, QWidget *parent = 0, QVBoxLayout *layout=0);
 
     void OpenLink();
 

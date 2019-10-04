@@ -18,8 +18,12 @@ class Page : public QWidget {
     void screenHandler();
 
 public:
-    Page(QWidget *parent=0);
+    Page(int page,QWidget *parent=0);
+    Page(int page,bool img,QWidget *parent=0);
+    void screenHandler_noIMG();
 };
+
+
 
 
 #endif //HELLOWORLD_PAGE_H

@@ -17,7 +17,7 @@ public:
     int index=1;
 
     Normal(QWidget *parent = 0);
-    QGridLayout *grid = new QGridLayout();;
+    QGridLayout *grid = new QGridLayout();
     void CSVparser(int pag);
     string array[9];
 

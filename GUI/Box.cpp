@@ -147,6 +147,35 @@ void Box::ImageLoader(std::string link) {
     fclose(fp);
     //system("pause");
 
+}
+
+Box::Box(std::string data, bool img, QWidget *parent, QVBoxLayout *layout): QGroupBox(parent) {
+    vbox = new QVBoxLayout;
+    ParseData(data);
+    //content
+    btn = new QPushButton("Click me ");
+    btn->setGeometry(0,0,200,20);
+    connect(btn, &QPushButton::clicked, this,  &::Box::OpenLink);
+    //connect(btn, , this, SLOT (handleButton()));
+
+    //label title
+    QString qstr_title = QString::fromStdString(title);
+    QLabel *label = new QLabel(qstr_title);
+
+    //load movie image poster
+
+    //convert link to const char
+    //ImageLoader(link);
+    QPixmap pm("/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/image/img.jpg");
+    QLabel *lbImg = new QLabel();
+    lbImg->setPixmap(pm);
+
+
+    vbox->addWidget(label);
+    vbox->addWidget(lbImg);
+    vbox->addWidget(btn);
+    setLayout(vbox);
+
 };
 
 

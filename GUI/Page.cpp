@@ -9,9 +9,14 @@
 #include <iostream>
 
 using namespace std;
-Page::Page(QWidget *parent) {
-    CSVparser(1);
+Page::Page(int page,QWidget *parent) {
+    CSVparser(page);
     screenHandler();
+    setLayout(grid);
+}
+Page::Page(int page, bool img, QWidget *parent) {
+    CSVparser(page);
+    screenHandler_noIMG();
     setLayout(grid);
 }
 
@@ -57,5 +62,20 @@ void Page::CSVparser(int pag) {
             //cout<<endl;
             tmp++;
         }
+    }
+}
+
+void Page::screenHandler_noIMG() {
+    int tmp = 0;
+    int tmp2 = 0;
+    for(int i =0;i<9;i++){
+        if(tmp2>2){
+            tmp2 = 0;
+            tmp += 1;
+        }
+        Box *b = new Box(array[i], false);
+
+        grid->addWidget(b,tmp,tmp2);
+        tmp2 +=1;
     }
 }

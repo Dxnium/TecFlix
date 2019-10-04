@@ -9,6 +9,7 @@
 #include <QWidget>
 #include <QScrollArea>
 #include <QGridLayout>
+#include "Page.h"
 
 using namespace std;
 
@@ -18,11 +19,23 @@ public:
     QScrollArea *scrollArea;
     string array[9];
     QGridLayout *grid = new QGridLayout;
+    QGridLayout *grid_scroll = new QGridLayout();
+    QWidget *widget;
+
+    int scroll_length;
+    int page_index;
+    Page *page;
+    Page *page2;
+    Page *page3;
 
     void CSVparser(int pag);
     void screeHandler();
 
     void wheelEvent(QWheelEvent *event);
+
+    void addPage();
+    void subPage();
+
 
 };
 

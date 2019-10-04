@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/Page.cpp" "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles/HelloWorld.dir/GUI/Page.cpp.o"
   "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/ScrollArea.cpp" "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles/HelloWorld.dir/GUI/ScrollArea.cpp.o"
   "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/GUI/StratWindow.cpp" "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles/HelloWorld.dir/GUI/StratWindow.cpp.o"
+  "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/NoP/NoPag.cpp" "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles/HelloWorld.dir/NoP/NoPag.cpp.o"
   "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/main.cpp" "/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/cmake-build-debug/CMakeFiles/HelloWorld.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
