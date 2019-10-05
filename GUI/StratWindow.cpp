@@ -11,7 +11,7 @@
 using namespace std;
 
 StratWindow::StratWindow(QWidget *parent): QWidget(parent) {
-    resize(700,400);
+    resize(1200,1000);
     setWindowTitle("TecFlix");
 
 
@@ -21,21 +21,25 @@ StratWindow::StratWindow(QWidget *parent): QWidget(parent) {
     setAutoFillBackground(true);
     setPalette(Pal);
 
+    QPixmap pm("/home/danium/Documents/TEC/Datos II/TecFlix/TecFlix/logo_transparent.png");
+    QLabel *lbImg = new QLabel(this);
+    lbImg->setPixmap(pm);
+
 
     QPushButton *btn_Infinity = new QPushButton("Scroll",this);
     connect(btn_Infinity, &QPushButton::clicked, this, &StratWindow::Infinity);
     btn_Infinity->setStyleSheet("background-color: rgb(181,56,56);border: none; ");
-    btn_Infinity->setGeometry(150,200,200,20);
+    btn_Infinity->setGeometry(400,200,200,20);
 
     QPushButton *btn_noInfinity = new QPushButton("Normal",this);
     connect(btn_noInfinity, &QPushButton::clicked, this, &StratWindow::Normal_Aaction);
     btn_noInfinity->setStyleSheet("background-color: rgb(0,147,56);border: none; ");
-    btn_noInfinity->setGeometry(350,200,200,20);
+    btn_noInfinity->setGeometry(600,200,200,20);
 
     QPushButton *btn_nopag = new QPushButton("NO-Pag",this);
     connect(btn_nopag, &QPushButton::clicked, this, &StratWindow::Nopag);
     btn_nopag->setStyleSheet("background-color: rgb(0,147,56);border: none; ");
-    btn_nopag->setGeometry(250,300,200,30);
+    btn_nopag->setGeometry(475,300,200,30);
 
 }
 

@@ -31,9 +31,9 @@ ScrollArea::ScrollArea(QWidget *parent) : QWidget(parent) {
 
     //screeHandler();
     page_index = 1;
-    page = new Page(page_index,false);
-    page2 = new Page(page_index + 1,false);
-    page3 = new Page(page_index + 2,false);
+    page = new Page(page_index, false);
+    page2 = new Page(page_index + 1, false);
+    page3 = new Page(page_index + 2, false);
 
 
     grid->addWidget(scrollArea);
@@ -118,7 +118,7 @@ void ScrollArea::addPage() {
     page = page2;
     page2 = page3;
 
-    Page *newpage = new Page(page_index+2,false);
+    Page *newpage = new Page(page_index+2, false);
 
     page3 = newpage;
     grid_scroll->addWidget(page);
@@ -135,7 +135,7 @@ void ScrollArea::subPage() {
     Page *tmp =page2;
     page2 = page;
     page3=tmp;
-    Page *newpage = new Page(page_index,false);
+    Page *newpage = new Page(page_index, false);
 
     page=newpage;
 
